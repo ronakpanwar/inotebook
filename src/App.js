@@ -10,6 +10,9 @@ import {
 
 } from "react-router-dom"
 import NoteState from './context/notes/noteState';
+import Alert from './component/Alert';
+import Signup from './component/Signup';
+import Login from './component/Login';
 
 function App() {
   return (
@@ -17,10 +20,13 @@ function App() {
     <>
     <NoteState>
     <Navbar/>
+    <Alert massage = {"its Alerts"} />
     <div className="container">
     <Routes>
       <Route exact path='/' element={<Home/>}/>
       <Route exact path='/about' element={<About/>}/>
+      <Route exact path='/login' element={<Login/>}/>
+      <Route exact path='/signup' element={<Signup/>}/>
     </Routes>
     </div>
     </NoteState>

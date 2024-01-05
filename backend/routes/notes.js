@@ -81,7 +81,7 @@ try {
 })
 
  //ROUTE 4-: delete the avalable notes using:PUT "/api/notes/updatenote = login require"
- router.put('/updatenote/:id',fetchuser,async (req , res)=>{
+ router.put('/deletenote/:id',fetchuser,async (req , res)=>{
 
 try {
   
